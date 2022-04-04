@@ -1,0 +1,52 @@
+.gridProductItemPage{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3px 0;
+    border-bottom: 1px solid #000;
+}
+.gridProductItemPage > div{
+    padding: 0 10px;
+    font-weight: bold;
+   
+}
+.gridProductContPage{
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: none;
+    border-radius: 5px;
+    
+}
+
+.gridProductTitleProductPage{
+    background: #ff7878;
+    padding: 5px 3px;
+    font-weight: bold;
+}
+.gridProductItemPageSubtitle{
+    background: #f3f0d7;
+    border-bottom: 1px solid #000;
+}
+.gridProductItemOculto{
+    display:none;
+}
+@media only screen and (min-width: 768px){
+    .gridProductItemPage{
+        grid-template-columns: auto repeat(8,1fr);
+    }
+    .gridProductItemPriceInv,.gridProductItemPriceWho,.gridProductItemStockMax,.gridProductItemStockMin,.gridProductItemcategory{
+        display:block;
+    }
+    .gridProductContPage{
+        width: 95%;
+    }
+    .gridProductItemPage > div{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:0.9em;
+    }
+}

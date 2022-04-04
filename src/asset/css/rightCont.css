@@ -1,0 +1,135 @@
+.rightCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.contInfoPrin{
+    /* background: #f00; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.infoPrin{
+    background: #f3f0d7;
+    padding: 20px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 3px solid #ff7878;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+.contMoreInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.cardMorePrinHome{
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+}
+.cardMorePrinTitle{
+    background: #ff7878;
+    padding: 10px 5px;
+    font-weight: bold;
+    color: #f3f0d7;
+    letter-spacing: 3px;
+    border-radius: 5px 5px 0 0;
+}
+.cardMorePrinImage{
+    line-height: 0;
+}
+.cardMorePrinImage > img{
+    width: 100%;
+}
+.cardMorePrinTitleProduct{
+    padding: 5px;
+    font-weight: bold;
+}
+.CardMorePrinCatUl{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+.CardMorePrinCatLi{
+    background: #f3f0d7;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-top: .5rem;
+}
+/* .CardMorePrinCatLi:first-child{
+    border-radius: 5px 5px 0 0;
+}
+.CardMorePrinCatLi:last-child{
+    border-radius: 0 0 5px 5px;
+} */
+.gridUserItemPage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3px 0;
+    border-bottom: 1px solid #000;
+}
+.gridUserItemPage > div{
+    padding: 0 10px;
+    font-weight: bold;
+}
+.gridUserContPage{
+    width: 80%;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: none;
+    border-radius: 5px;
+}
+.gridUserTitleUserPage{
+    background: #ff7878;
+    padding: 5px 3px;
+    font-weight: bold;
+}
+.gridUserItemPageSubtitle{
+    background: #f3f0d7;
+    border-bottom: 1px solid #000;
+}
+.gridUserItemPage > div:first-child, .gridUserItemPage > div:last-child{
+    display: none;
+}
+@media only screen and (min-width: 768px){
+    .contInfoPrin{
+        flex-direction: row;
+    }
+    .contMoreInfo{
+        width: 50%;
+        margin: auto;
+    }
+    .gridUserItemPage{
+        grid-template-columns: auto repeat(3,1fr);
+    }
+    .gridUserItemPage > div:first-child, .gridUserItemPage > div:last-child{
+        display: block;
+    }
+    .gridUserContPage{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .contMoreInfo{
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .cardMorePrinHome{
+        max-width: 40%;
+    }
+}

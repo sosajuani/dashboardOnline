@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contGral{
+    display: flex;
+}
+footer{
+    text-align: center;
+}
+.btnDashboard{
+    background: #ff7878;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #f3f0d7;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    border: none;
+}
+.linkNav{
+    color: #000;
+    text-decoration: none;
+}
+.messageForm{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.successMsg{
+    background: #d1e7dd;
+    color: #0f5132;
+}
+.msgOcultar{
+    display: none;
+}
+.modalCont{
+    background: rgba(0, 0,0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalView{
+    background: #f3f0d7;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ff7878;
+}
+.modalTitle{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+.modalButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.modalButtons > button{
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    font-size: 2rem;
+}
+.btnRed{
+    background: #ff7878;
+}
+.btnGray{
+    background: #6c757d;
+    color: #e7e7e7;
+}
+@media only screen and (min-width: 768px){
+
+}

@@ -1,0 +1,46 @@
+.createForm{
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.createForm > input, .createForm > textarea,.createForm > select{
+    border-radius: 5px;
+    border: 3px solid #ff7878;
+    color: #ff7878;
+    padding: 10px;
+    resize: vertical;
+    margin: 10px 0;
+    outline: none;
+}
+.createForm > input:focus, .createForm > textarea:focus,.createForm > select:focus{
+    outline: 3px solid #ff7878;
+}
+.createForm > input[type="submit"]{
+    border: none;
+    padding: 10px 5px;
+    color: #fff;
+}
+.titleForm{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #ff7878;
+    text-shadow: 0 1px 1px #000;
+}
+@media only screen and (min-width: 768px){
+    .createForm{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .createForm{
+        width: 40%;
+        margin: auto;
+    }
+    .titleForm{
+        margin: 0;
+    }
+}

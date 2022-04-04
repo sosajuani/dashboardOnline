@@ -1,0 +1,27 @@
+.headerLeft{
+    /* width: 10%; */
+    background: #FF7878;
+    min-height: 100vh;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.headerLeftLi:first-child{
+    background: #f3f0d7;
+    margin: 0;
+    padding: 0;
+    height: 4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+.headerLeftLi{
+    text-align: center;
+    background: #f3f0d7;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
